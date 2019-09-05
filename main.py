@@ -16,8 +16,6 @@ def home():
         data = [form.bedrooms.data,form.bathrooms.data,form.sqft_living.data,form.sqft_lot.data,
                 form.floors.data,form.sqft_above.data,form.sqft_lot15.data,form.yr_built.data,form.condition.data,
                 form.zipcode.data]
-#form.waterfront.data,form.view.data,form.sqft_basement.data,form.grade.data,form.lat.data,form.lng.data,form.sqft_living15.data
-#form.yr_renovated.data,
 
         model = load('model.joblib')
         result = model.predict([data])
